@@ -14,9 +14,15 @@ packages:
   gitUsername: Karthik-V-IBM-10
   gitBranch: main
 - name: JMSTest
+  version: "1.0"
   gitServerName: kvv
   gitUrl: https://github.com/prabhakarsag
   gitUsername: Karthik-V-IBM-10
+  gitBranch: main
+- name: SSL_JDBC_Test
+  gitServerName: prabhakaribm
+  gitUrl: https://github.com/prabhakaribm
+  gitUsername: prabhakaribm
   gitBranch: main
 services:
 - serviceName: project.kvv_0608_dev.documenttypes:Person
@@ -25,16 +31,28 @@ services:
     version: "1.0"
   - name: JMS2waySSL
     version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
   - name: JMSTest
     version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 - serviceName: project.kvv_0608_dev.integrations:DAFdocumentToJson
   packages:
   - name: Kvv_0608_DevProject
     version: "1.0"
   - name: JMS2waySSL
     version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
   - name: JMSTest
     version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 - serviceName: pub.json:documentToJSON
   packages:
   - name: WmPublic
@@ -45,24 +63,42 @@ services:
     version: "1.0"
   - name: JMS2waySSL
     version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
   - name: JMSTest
     version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 - serviceName: project.kvv_0608_dev.referencedata:ref1
   packages:
   - name: Kvv_0608_DevProject
     version: "1.0"
   - name: JMS2waySSL
     version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
   - name: JMSTest
     version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 - serviceName: project.kvv_0608_dev.integrations:switchCaseDADA
   packages:
   - name: Kvv_0608_DevProject
     version: "1.0"
   - name: JMS2waySSL
     version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
   - name: JMSTest
     version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 - serviceName: pub.math:addInts
   packages:
   - name: WmPublic
